@@ -7,9 +7,8 @@ class AboutMe extends Component {
       <div className="about-me">
         <h3>About me</h3>
         <p>
-          I&#8217;m just your local East Lansing student and developer. You may know me from things such as 'procraastinating on my assignments because I was coding instead' or 'taking a nap when I have better things to do'.
+        I’m just your typical college student and all-around nerd based near Lansing, MI. Below you’ll find some of the things I’ve done recently, as well as a breakdown of what I can do. If you want to get in touch with me professionally, or just say hey, don’t hesitate to click that button and it’ll open a fresh new email. I’m glued to my phone, so you’ll probably even get a quick reply!
         </p>
-        <p>If you want to check out some of the things I&#8217;ve done, just click one of the buttons below for sections of my resume!</p>
       </div>
     );
   }

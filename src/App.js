@@ -3,6 +3,7 @@ import './App.css';
 import CallToAction from './CallToAction';
 import AboutMe from './AboutMe';
 import Resume from './Resume';
+import Skills from './Skills';
 
 class App extends Component {
   render() {
@@ -12,6 +13,8 @@ class App extends Component {
         <AboutMe />
         <hr />
         <Resume />
+        <hr />
+        <Skills />
       </div>
     );
   }
