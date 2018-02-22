@@ -4,6 +4,7 @@ import CallToAction from './CallToAction';
 import AboutMe from './AboutMe';
 import Resume from './Resume';
 import Skills from './Skills';
+import Projects from './Projects';
 
 class App extends Component {
   render() {
@@ -11,6 +12,8 @@ class App extends Component {
       <div className="App">
         <CallToAction />
         <AboutMe />
+        <hr />
+        <Projects />
         <hr />
         <Resume />
         <hr />
