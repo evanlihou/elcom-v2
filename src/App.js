@@ -1,23 +1,19 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
-import CallToAction from './CallToAction';
-import AboutMe from './AboutMe';
-import Resume from './Resume';
-import Skills from './Skills';
-import Projects from './Projects';
+import MainPage from './MainPage';
+import Tutoring from './Tutoring';
+import RouteNotFound from './RouteNotFound';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <CallToAction />
-        <AboutMe />
-        <hr />
-        <Projects />
-        <hr />
-        <Resume />
-        <hr />
-        <Skills />
+        <Switch>
+          <Route exact path="/" component={MainPage} />
+          <Route path="/tutoring" component={Tutoring} />
+          <Route exact path="*" component={RouteNotFound} />
+        </Switch>
       </div>
     );
   }

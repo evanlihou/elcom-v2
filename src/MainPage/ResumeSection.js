@@ -6,7 +6,7 @@ class ResumeSection extends Component {
       <div className="resume-section">
         <div className="resume-section-content">
           <h4>{this.props.title}</h4>
-          <p>{this.props.description}</p>
+          <p>{this.props.children}</p>
         </div>
       </div>
     );
