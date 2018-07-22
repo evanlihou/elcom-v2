@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import BigCalendar from 'react-big-calendar';
 import moment from 'moment';
-import $ from 'jquery'
+import $ from 'jquery';
 import JsonRpcClient from '../Common/jsonrpcclient'
 import ScrollToComponent from 'react-scroll-to-component'
 import './Calendar.css'
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import BookingFields from './BookingFields'
+import consts from '../.env.js';
 BigCalendar.momentLocalizer(moment);
 
 class TutoringCalendar extends Component {
@@ -18,7 +19,6 @@ constructor() {
     confirmationModalVisible: false,
     bookedModalVisible: false
   }
-  this.store = {simplybookKey: 'ae8255bddbe2cee260698783a7ce76a24368249d674fde0c6af6317c4b3ca5ae'}
 }
 componentWillMount() {
   // Only enable the day calendar view on small screens, otherwise day and week
@@ -36,15 +36,15 @@ componentDidMount() {
   )
   rpcLogin.request(
     'getToken',
-    'evanlihou',
-    this.store.simplybookKey
-  ).then(function (res) {
+    consts.simplyLogin,
+    consts.simplyApiKey
+  ).then((res) => {
     this.setState({token: res})
-  }.bind(this)).then(function() {
+  }).then(() => {
     // Make an API call to get available appointment slots
     var simplybookAPI = new JsonRpcClient({
       endpoint: 'https://user-api.simplybook.me/',
-      headers: {'X-Company-Login': 'evanlihou', 'X-Token': this.state.token}
+      headers: {'X-Company-Login': consts.simplyLogin, 'X-Token': this.state.token}
       })
     var startDate = moment()
     // Get available times for next month
@@ -53,7 +53,7 @@ componentDidMount() {
       startDate.add(12, 'hour').format("YYYY-MM-DD"),
       startDate.add(1, 'month').format("YYYY-MM-DD"),
       "1", "1", "1"
-    ).then(function(res) {
+    ).then((res) => {
       // Add the available times to a list for the calendar
       var availableTimes = []
       for (var date in res) {
@@ -67,8 +67,8 @@ componentDidMount() {
       } // End for date
       this.setState({startTimes: availableTimes})
       this.setState({loading: false})
-    }.bind(this)) // End initializing calendar
-  }.bind(this)) // End Simplybook API call
+    }) // End initializing calendar
+  }) // End Simplybook API call
 }
 
 render() {
@@ -96,7 +96,11 @@ render() {
             }.bind(this)}
             formats={{
               dayFormat: (date, culture, momentLocalizer) =>
-                momentLocalizer.format(date, 'ddd, M/DD', culture)
+                momentLocalizer.format(date, 'ddd, M/DD', culture),
+              timeGutterFormat: (date, culture, momentLocalizer) => 
+                momentLocalizer.format(date, 'hh a', culture),
+              eventTimeRangeFormat: (a, culture, momentLocalizer) =>
+                momentLocalizer.format(a.start, 'h:mm a', culture)
             }}
           />
           <h4>Calendar above only shows the next month of available times, and hides times earlier than 12 hours from now.</h4>

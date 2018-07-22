@@ -3,6 +3,7 @@ import moment from 'moment'
 import Modal from 'simple-react-modal'
 import JsonRpcClient from '../Common/jsonrpcclient'
 import { FormErrors } from './FormErrors'
+import consts from '../.env.js';
 import './BookingFields.css'
 
 class BookingFields extends Component {
@@ -87,7 +88,7 @@ class BookingFields extends Component {
   bookEvent() {
     var simplybookAPI = new JsonRpcClient({
       endpoint: 'https://user-api.simplybook.me/',
-      headers: {'X-Company-Login': 'evanlihou', 'X-Token': this.props.token}
+      headers: {'X-Company-Login': consts.simplyLogin, 'X-Token': this.props.token}
     })
     var clientInfo = {'name':this.state.name, 'phone': this.state.phone, 'email': this.state.email}
     simplybookAPI.request(

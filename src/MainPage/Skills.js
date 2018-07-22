@@ -7,17 +7,18 @@ class Skills extends Component {
       <div className="skills">
         <h3>My Skills</h3>
         <ul>
-          <li><h5>Linux Server Management</h5></li>
-          <li><h5>Windows Server Management</h5></li>
-          <li><h5>PHP</h5></li>
-          <li><h5>JavaScript</h5></li>
-          <li><h5>HTML</h5></li>
-          <li><h5>CSS</h5></li>
-          <li><h5>Sass</h5></li>
-          <li><h5>Node.js</h5></li>
-          <li><h5>React</h5></li>
-          <li><h5>Video and Audio Production</h5></li>
-          <li><h5>Adobe Creative Suite</h5></li>
+          <li>SharePoint Development</li>
+          <li>Technical Support</li>
+          <li>Linux Server Management</li>
+          <li>Windows Server Management</li>
+          <li>PHP</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Sass</li>
+          <li>Node.js</li>
+          <li>React</li>
+          <li>Video and Audio Production</li>
         </ul>
       </div>
     );

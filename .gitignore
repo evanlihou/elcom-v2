@@ -12,6 +12,7 @@ biuld.zip
 
 # misc
 .DS_Store
+.env.js
 .env.local
 .env.development.local
 .env.test.local
