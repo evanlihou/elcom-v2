@@ -8,7 +8,7 @@ class Resume extends Component {
       <div className="resume">
         <h3>Curriculum Vitae</h3>
         <ResumeSection title="Student Info Tech" location="Facility for Rare Isotope Beams" current>
-          TODO. Loreum ipsum dolor sor amit.
+          
         </ResumeSection>
         <ResumeSection title="Broad Scholar" location="MSU Broad College of Business">
           I had the pleasure of working with
@@ -29,16 +29,6 @@ class Resume extends Component {
           Insight to support a major internet provider’s brand and rapport with
           their resellers.
         </ResumeSection>
-        {/* To be removed in the near future */}
-        {/* <ResumeSection title="Television Studio Engineer">
-          I’ve spent many hours with my high school’s television production crew
-          helping to troubleshoot broken equipment and remodel the studio to
-          make use of new equipment. Additionally, I was responsible for
-          designing and programming an inventory management system to streamline
-          the department’s equipment sign-in/sign-out process (demo available
-          upon request). This was my unofficial second job while I was in high
-          school, but one that I will never forget.
-        </ResumeSection> */}
       </div>
     );
   }
