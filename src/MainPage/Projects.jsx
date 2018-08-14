@@ -7,26 +7,7 @@ class Projects extends Component {
     this.state = {
       modal: false
     }
-    this.openModal = this.openModal.bind(this);
-    this.afterOpenModal = this.afterOpenModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
   }
-
-  //Needs a better way to do this
-    openModal() {
-      this.setState({modal: true});
-    }
-
-    afterOpenModal() {
-      // references are now sync'd and can be accessed.
-
-    }
-
-    closeModal() {
-      this.setState({
-        modal: false
-      });
-    };
 
   render() {
     return (
