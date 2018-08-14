@@ -7,8 +7,6 @@
 /coverage
 
 # production
-/build
-biuld.zip
 
 # misc
 .DS_Store

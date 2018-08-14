@@ -1,6 +1,6 @@
 {
   "name": "elcom-v2",
-  "version": "0.2.0",
+  "version": "2.3.0",
   "private": true,
   "dependencies": {
     "async": "^2.6.1",
