@@ -7,8 +7,8 @@ class Menu extends Component {
       <div className="menu">
         <a href="/">Home</a>
         <span>/</span>
-        <a href="/tutoring">Tutoring</a>
-        <span>/</span>
+        {/* <a href="/tutoring">Tutoring</a>
+        <span>/</span> */}
         <a href="https://blog.evanlihou.com/">Blog</a>
       </div>
     )
