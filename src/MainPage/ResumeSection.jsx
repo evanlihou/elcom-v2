@@ -8,6 +8,8 @@ class ResumeSection extends Component {
           {this.props.current && <span className="tag">Current Position</span>}
           <h4>{this.props.title}</h4>
           {this.props.location && <span className="location">{this.props.location}</span>}
+          {this.props.location && this.props.time && <span>{' '}&mdash;{' '}</span>}
+          {this.props.time && <span className="time">{this.props.time}</span>}
           <p>{this.props.children}</p>
         </div>
       </div>

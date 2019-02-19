@@ -8,9 +8,10 @@ class CallToAction extends Component {
       <div className="call-to-action">
         <Menu />
         <div className="cta-content">
-          <h1>Hey there!</h1>
-          <h2>I&#8217;m Evan Lihou</h2>
+          <h1 className="noPrint">Hey there!</h1>
+          <h2><span className="noPrint">I'm </span>Evan Lihou</h2>
           <a href={"mailto:" + this.props.email} className="contact">Get in touch</a>
+          <span className="contact-text">{this.props.email}</span>
           <section className="social">
             {this.props.showAllSocials &&
               <a href="//www.twitter.com/evanlihou"><i className="fa fa-twitter"></i>@evanlihou</a>
