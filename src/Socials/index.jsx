@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CallToAction from './Common/CallToAction'
+import CallToAction from '../Common/CallToAction'
 
 class Socials extends Component {
   render() {

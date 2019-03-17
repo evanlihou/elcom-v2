@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import CallToAction from './Common/CallToAction';
-import AboutMe from './MainPage/AboutMe';
-import Resume from './MainPage/Resume';
-import Skills from './MainPage/Skills';
-import Projects from './MainPage/Projects';
+import CallToAction from '../Common/CallToAction';
+import AboutMe from './AboutMe';
+import Resume from './Resume';
+import Skills from './Skills';
+import Projects from './Projects';
 
 class MainPage extends Component {
   render() {
