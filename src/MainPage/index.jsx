@@ -8,15 +8,17 @@ import Projects from './Projects';
 class MainPage extends Component {
   render() {
     return (
-      <div className="mainPage">
+      <div className="page mainPage">
         <CallToAction email="evanlihou@evanlihou.com"/>
-        <AboutMe />
-        <hr />
-        <Projects />
-        <hr />
-        <Resume />
-        <hr />
-        <Skills />
+        <div className="pageContent">
+          <AboutMe />
+          <hr />
+          <Projects />
+          <hr />
+          <Resume />
+          <hr />
+          <Skills />
+        </div>
       </div>
     );
   }

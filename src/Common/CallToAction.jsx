@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import './CallToAction.css';
-import Menu from './Menu'
 
 class CallToAction extends Component {
   render() {
     return (
       <div className="call-to-action">
-        <Menu />
         <div className="cta-content">
           <h1 className="noPrint">Hey there!</h1>
           <h2><span className="noPrint">I'm </span>Evan Lihou</h2>

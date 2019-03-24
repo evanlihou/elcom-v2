@@ -11,15 +11,17 @@ class Tutoring extends Component {
     return (
       <div className="mainPage">
         <CallToAction showAllSocials email="tutoring@evanlihou.com"/>
-        <AboutMe />
-        <hr />
-        <WhyMe />
-        <hr />
-        <Classes />
-        <hr />
-        <Rates />
-        <hr />
-        <Calendar />
+        <div className="pageContent">
+          <AboutMe />
+          <hr />
+          <WhyMe />
+          <hr />
+          <Classes />
+          <hr />
+          <Rates />
+          <hr />
+          <Calendar />
+        </div>
       </div>
     );
   }
