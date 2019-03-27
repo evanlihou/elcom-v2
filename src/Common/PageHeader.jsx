@@ -7,6 +7,7 @@ class PageHeader extends Component {
       <div className="PageHeader">
         <div className="content">
           <h2>Evan Lihou</h2>
+          {this.props.title && <h3>{this.props.title}</h3>}
         </div>
       </div>
     )
