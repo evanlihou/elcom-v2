@@ -6,11 +6,14 @@
   background: black
   position: relative
   z-index: 10
-  // transform: skewY(-5deg) -- Removed when Menu moved into App file
   a
     display: inline-block
     text-decoration: none
     color: white
+    &:after
+      content: '\A0 / \A0' // Non breaking spaces to add padding to menu items
+    &:last-of-type:after
+      content: ''
   span
     display: inline-block
     color: white

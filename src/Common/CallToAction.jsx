@@ -11,14 +11,9 @@ class CallToAction extends Component {
           <a href={"mailto:" + this.props.email} className="contact">Get in touch</a>
           <span className="contact-text">{this.props.email}</span>
           <section className="social">
-            {this.props.showAllSocials &&
-              <a href="//www.twitter.com/evanlihou"><i className="fa fa-twitter"></i>@evanlihou</a>
-            }
-            {this.props.showAllSocials &&
-              <a href="//snapchat.com/add/evanlihou"><i className="fa fa-snapchat"></i>@evanlihou</a>
-            }
             <a href="//www.linkedin.com/in/evan-lihou-993a26147/"><i className="fa fa-linkedin"></i>Evan Lihou</a>
             <a href="//github.com/evanlihou"><i className="fa fa-github"></i>@evanlihou</a>
+            <a href="//www.twitter.com/evanlihou"><i className="fa fa-twitter"></i>@evanlihou</a>
           </section>
         </div>
       </div>

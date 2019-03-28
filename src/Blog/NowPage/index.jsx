@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import Loading from '../../Common/Loading';
 import PageHeader from '../../Common/PageHeader';
-import env from '../../.env.js';
-
-import Moment from 'moment';
+import GetNowPost from './getNowPost';
 
 /** 
  * The source of the post is trusted, but just in case someone tries to
@@ -23,37 +21,19 @@ class NowPage extends Component {
     }
   }
 
-  componentDidMount() {
-    this.getNowPost();
-  }
-
-  async getNowPost() {
-    var res = await fetch(
-      env.blogBaseEndpoint +
-      '/posts/' + 
-      "?key=" + env.blogContentApiKey +
-      "&filter=tag:now" + 
-      "&limit=1" + 
-      "&order=published_at%20desc");
-    var { posts } = await res.json();
-    
-    if (!posts) {
-      this.setState({
-        loading: false,
-      });
-      return;
-    }
-
-    var post = posts[0];
-    post["publish_moment"] = new Moment(post["published_at"]);
-
-    console.log(post["publish_moment"])
-
-    console.log(posts[0]);
+  async componentDidMount() {
+    var now = await GetNowPost();
     this.setState({
-      nowContent: posts[0],
       loading: false
     });
+
+    if (now.error) {
+      alert(now.error);
+    } else {
+      this.setState({
+        nowContent: now
+      });
+    }
   }
 
   render() {
@@ -62,6 +42,7 @@ class NowPage extends Component {
       <div className="NowPage">
         <PageHeader title="Now" />
         <div className="pageContent">
+          <NowExplaination />
           {this.state.loading && <Loading />}
           {!this.state.loading && !now &&
             <div>
@@ -86,6 +67,23 @@ class NowPage extends Component {
         </div>
       </div>
     );
+  }
+}
+
+class NowExplaination extends Component {
+  render() {
+    return (
+      <div className="NowExplaination">
+        <p>
+          <em>
+            A Now page is a concept by <a href="https://sivers.org/nowff">Derek Sivers</a> which makes it easy for someone
+            looking at a personal website to see what that person has been
+            focusing on recently. It is not a daily account of my life, simply
+            a high level overview of my priorities.
+          </em>
+        </p>
+      </div>
+    )
   }
 }
 

@@ -26,20 +26,10 @@ class PostsList extends Component {
   render() {
     return (
       <div className="PostsList">
+        <PageHeader title="Blog" />
         {this.state.loading && <Loading />}
         {this.state.error && <p>An error has occured. Please see the console.</p>}
         {this.state.posts && <p>Posts!</p>}
-      </div>
-    )
-    if (this.state.loading) {
-      return (<Loading />)
-    }
-    return (
-      <div className="PostsList">
-        <PageHeader />
-        <div className="pageContent">
-          <p>Loading</p>
-        </div>
       </div>
     )
   }
