@@ -9,7 +9,7 @@ class Menu extends Component {
         <Link to="/">Home</Link>
         {/* <a href="/tutoring">Tutoring</a> */}
         <Link to="/now">Now</Link>
-        <a href="https://blog.evanlihou.com/">Blog</a>
+        <Link to="/blog">Blog</Link>
       </div>
     )
   }
