@@ -5,3 +5,4 @@ The new and improved evanlihou.com
 - Init `npm`
 - Run `npm start` in a terminal tab
 - Run `npm run watch-css` when working on styling for automatic Sass to CSS conversion and hot reloading
+
