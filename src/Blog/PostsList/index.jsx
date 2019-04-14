@@ -33,18 +33,16 @@ class PostsList extends Component {
     })
     if (error) console.error(error);
 
-    if (window.history.pushState) {
-      console.log("push state")
+    if (window.history.pushState && pageNum > 1) {
       // Set query string
       var query = QueryString.parse(window.location.search);
       query.page = pageNum;
-      console.log(query);
       var newUrl = window.location.pathname + '?' + QueryString.stringify(query);
       window.history.pushState({
         path: newUrl,
         title: document.title
       }, document.title, newUrl);
-    } else {console.log("no push state")}
+    }
   }
 
   render() {
