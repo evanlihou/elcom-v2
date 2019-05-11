@@ -7,7 +7,7 @@
     "async": "^2.6.1",
     "axios": "^0.18.0",
     "babel-preset-stage-3": "^6.24.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "json-rpc2": "^1.0.2",
     "moment": "^2.22.2",
     "prop-types": "^15.7.2",
