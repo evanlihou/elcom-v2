@@ -17,7 +17,7 @@
     "react-dom": "^15.6.1",
     "react-loading": "^2.0.3",
     "react-modal": "^2.2.4",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "^5.0.0",
     "react-scroll-to-component": "^1.0.2",
     "sanitize-html": "^1.20.0",
     "simple-react-modal": "^0.5.1"
