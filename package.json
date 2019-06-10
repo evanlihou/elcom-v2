@@ -11,7 +11,7 @@
     "json-rpc2": "^1.0.2",
     "moment": "^2.22.2",
     "prop-types": "^15.7.2",
-    "query-string": "^6.4.2",
+    "query-string": "^6.7.0",
     "react": "^15.6.1",
     "react-big-calendar": "^0.19.2",
     "react-dom": "^15.6.1",
