@@ -14,7 +14,7 @@
     "query-string": "^6.7.0",
     "react": "^15.6.2",
     "react-big-calendar": "^0.20.2",
-    "react-dom": "^15.6.1",
+    "react-dom": "^15.6.2",
     "react-loading": "^2.0.3",
     "react-modal": "^2.2.4",
     "react-router-dom": "^4.3.1",
