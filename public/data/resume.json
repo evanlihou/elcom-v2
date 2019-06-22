@@ -1,0 +1,21 @@
+[
+    {
+        "current": true,
+        "title": "Student Info Tech Assistant",
+        "location": "Facility for Rare Isotope Beams",
+        "start_date": "May 2018",
+        "description": "My position at the FRIB began in SharePoint development maintaining and creating various simple to moderately complex solutions for business units. Since about September I have also been spending about half of my time working on their ASP.NET MVC application for more advanced solutions."
+    },
+    {
+        "title": "Broad Scholar",
+        "location": "MSU Broad College of Business",
+        "start_date": "September 2017",
+        "end_date": "May 2018",
+        "description": "I had the pleasure of working with Dr. Lu Zhang from Michigan State University's School of Hospitality Business. During my time in this position, I assisted in research, including categorizing and collating academic papers as well as scraping data from online sources to collect information for multiple papers and manuscripts."
+    },
+    {
+        "title": "Tech Freelancing",
+        "start_date": "Summer 2017",
+        "description": "My time freelancing has brought me together with several companies to do diverse jobs across the tech field. I’ve worked with great companies like Peak Systems for a large thin client deployment and The Consumer Insight to support a major internet provider’s brand and rapport with their resellers."
+    }
+]
