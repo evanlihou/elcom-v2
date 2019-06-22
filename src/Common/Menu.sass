@@ -1,8 +1,11 @@
+@import "Variables"
+  
 .menu
   padding-top: 10px
   padding-bottom: 10px
-  display: flex
-  justify-content: center
+  display: grid
+  grid-template-columns: 1fr auto 1fr
+  // justify-content: center
   background: black
   position: relative
   z-index: 10
@@ -10,14 +13,36 @@
     display: inline-block
     text-decoration: none
     color: white
-    &:after
-      content: '\A0 / \A0' // Non breaking spaces to add padding to menu items
-    &:last-of-type:after
-      content: ''
+  .links
+    grid-column-start: 2
   span
     display: inline-block
     color: white
     padding: 0 10px
+    -moz-user-select: none
+    -ms-user-select: none
+    -khtml-user-select: none
+    -webkit-user-select: none
+    -webkit-touch-callout: none
+  .themeSwitch
+    float: right
+    margin-left: auto
+  button
+    margin-right: 20px
+    border-radius: 7px
+    display: block
+    padding: 3px 7px
+    font-size: 16px
+    box-shadow: none
+    text-align: center
+    &:hover
+      cursor: pointer
+    .dark-mode &
+      background: $light-mode-background
+      color: $light-mode-text
+    .light-mode &
+      background: $dark-mode-background
+      color: $dark-mode-text
   
 @media print
   .menu

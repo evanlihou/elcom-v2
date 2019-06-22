@@ -5,7 +5,7 @@ import './CallToAction.sass';
 class Social extends Component {
   render() {
     return (
-      <a href={this.props.link}><i className={"fa fa-"+this.props.icon} />{this.props.text}</a>
+      <a href={this.props.link}><i className={"fab fa-"+this.props.icon} />{this.props.text}</a>
     )
   }
 }
@@ -45,7 +45,7 @@ class CallToAction extends Component {
           /></h3>
           <a href={"mailto:" + this.props.email} className="contact">Get in touch</a>
           <span className="contact-text">{this.props.email}</span>
-          {this._socials && <Socials socials={[
+          <Socials socials={[
             {
                 "icon": "linkedin",
                 "link": "https://www.linkedin.com/in/evan-lihou-993a26147",
@@ -62,7 +62,6 @@ class CallToAction extends Component {
                 "text": "@evanlihou"
             }
           ]}/>
-          }
         </div>
       </div>
     );

@@ -1,3 +1,5 @@
+@import "../Common/Variables"
+  
 .skills
   ul
     list-style: none
@@ -5,8 +7,9 @@
     flex-wrap: wrap
     justify-content: center
     li
-      background: lighten(#ccc, 10%)
+      background: lighten($light-mode-background, 10%)
+      .dark-mode &
+        background: darken($dark-mode-background, 10%)
       padding: 5px
       margin: 5px
-      //font-size: 1rem
       font-weight: 400

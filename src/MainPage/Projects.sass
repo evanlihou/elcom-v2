@@ -1,14 +1,20 @@
+@import "../Common/Variables"
+  
 .projects
   a
     text-decoration: none
-    color: black
+    color: $light-mode-text
+    .dark-mode &
+      color: $dark-mode-text
   ul
     list-style: none
     display: flex
     flex-wrap: wrap
     justify-content: center
     li
-      background: lighten(#ccc, 10%)
+      background: lighten($light-mode-background, 10%)
+      .dark-mode &
+        background: darken($dark-mode-background, 5%)
       padding: 5px
       margin: 5px
       cursor: pointer

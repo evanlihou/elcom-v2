@@ -1,16 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700')
-  
+@import "./Common/Variables"
+
 body
-  background: #eee
   margin-bottom: 50px
   font-family: 'Open Sans', sans-serif
+  background: $light-mode-background
+  color: $light-mode-text
+  &.dark-mode
+    background: $dark-mode-background
+    color: $dark-mode-text
+    ::selection
+      background: black
+
+a
+  color: $light-mode-text
+  .dark-mode &
+    color: $dark-mode-text
 
 hr
   margin: 20px 20% 10px 20%
-
+  border-style: solid
+  $contrast-modifier: 20%
+  border-width: .75px
+  color: darken($light-mode-background, $contrast-modifier)
+  .dark-mode &
+    color: lighten($dark-mode-background, $contrast-modifier)
 h3
-  color: #222
   text-transform: uppercase
+  color: $light-mode-text
+  .dark-mode &
+    color: $dark-mode-text
 
 .pageContent
   margin: 0 10%

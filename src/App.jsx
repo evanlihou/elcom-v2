@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import './Common/Variables.sass'
 import './App.sass';
 import Menu from './Common/Menu'
 import MainPage from './MainPage/';
