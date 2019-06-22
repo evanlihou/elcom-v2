@@ -4,7 +4,7 @@ import Modal from 'simple-react-modal'
 import JsonRpcClient from '../Common/jsonrpcclient'
 import { FormErrors } from './FormErrors'
 import consts from '../.env.js';
-import './BookingFields.css'
+import './BookingFields.sass'
 
 class BookingFields extends Component {
 

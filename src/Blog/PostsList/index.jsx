@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import QueryString from 'query-string';
-import './PostsList.css';
+import './PostsList.sass';
 import PageHeader from '../../Common/PageHeader';
 import Loading from '../../Common/Loading';
 import getPosts from './getPosts'

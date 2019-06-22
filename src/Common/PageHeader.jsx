@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './PageHeader.css';
+import './PageHeader.sass';
 
 class PageHeader extends Component {
   render() {

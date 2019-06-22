@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import './App.css';
+import './App.sass';
 import Menu from './Common/Menu'
 import MainPage from './MainPage/';
 // Tutoring removed from site as I do not currently tutor

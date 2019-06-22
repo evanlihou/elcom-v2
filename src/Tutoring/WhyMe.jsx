@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './WhyMe.css';
+import './WhyMe.sass';
 
 class WhyMe extends Component {
   render() {

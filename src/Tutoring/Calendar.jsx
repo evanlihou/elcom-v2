@@ -4,8 +4,8 @@ import moment from 'moment';
 import $ from 'jquery';
 import JsonRpcClient from '../Common/jsonrpcclient'
 import ScrollToComponent from 'react-scroll-to-component'
-import './Calendar.css'
-import 'react-big-calendar/lib/css/react-big-calendar.css';
+import './Calendar.sass'
+import 'react-big-calendar/lib/css/react-big-calendar.sass';
 import BookingFields from './BookingFields'
 import consts from '../.env.js';
 BigCalendar.momentLocalizer(moment);

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './CallToAction.css';
+import './CallToAction.sass';
 
 class CallToAction extends Component {
   render() {
