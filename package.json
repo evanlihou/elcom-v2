@@ -5,25 +5,25 @@
   "dependencies": {
     "ajv": "^6.10.0",
     "async": "^2.6.1",
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "babel-preset-stage-3": "^6.24.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "json-rpc2": "^1.0.2",
     "markdown-to-jsx": "^6.9.3",
-    "moment": "^2.22.2",
-    "prop-types": "^15.7.2",
-    "query-string": "^6.4.2",
     "react": "^16.8.6",
-    "react-big-calendar": "^0.19.2",
     "react-dom": "^16.0.0",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.7.0",
+    "react-big-calendar": "^0.20.2",
     "react-loading": "^2.0.3",
     "react-markdown": "^4.0.8",
     "react-modal": "^3.0.0",
     "react-router-dom": "^4.3.1",
     "react-scroll-to-component": "^1.0.2",
-    "sanitize-html": "^1.20.0",
+    "sanitize-html": "^1.20.1",
     "simple-react-modal": "^0.5.1",
-    "typewriter-effect": "^2.5.3"
+    "typewriter-effect": "^2.6.0"
   },
   "devDependencies": {
     "react-scripts": "^3.0.0"
