@@ -1,4 +1,4 @@
-$accent: #2f83e2
+@import "../../Common/Variables"
 
 .PostsList
   .pagination
@@ -39,10 +39,15 @@ $accent: #2f83e2
       .meta
         margin: 0
         font-style: italic
-      
+
+      border-left-color: $accent
+      .dark-mode &
+        border-left-color: lighten($dark-mode-accent, 10%)
+
       transition: 0s
       &:hover
-        border-left: 2px solid $accent
+        border-left-width: 2px
+        border-left-style: solid
         margin-left: -10px
         padding-left: 8px
         transition: 0.3s

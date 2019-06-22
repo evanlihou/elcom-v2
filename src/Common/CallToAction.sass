@@ -88,7 +88,9 @@
         text-decoration: none
         transition: background .2s
         &:hover
-          background: lighten(#2f83e2, 10%)
+          background: lighten($accent, 10%)
+          .dark-mode &
+            background: lighten($dark-mode-accent, 10%)
         @media print
           color: black
       svg
