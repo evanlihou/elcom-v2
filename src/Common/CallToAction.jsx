@@ -35,8 +35,7 @@ class CallToAction extends Component {
               strings: [
                 "custom web solutions",
                 ".NET development",
-                "freelancing",
-                "FIRST volunteering"
+                "freelancing"
               ],
               autoStart: true,
               loop: true,
