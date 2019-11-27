@@ -1,0 +1,3 @@
+Contact: security@evanlihou.com
+Preferred-Languages: en
+Canonical: https://evandoes.dev/.well-known/security.txt
