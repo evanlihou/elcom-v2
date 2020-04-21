@@ -15,7 +15,7 @@
     "prop-types": "^15.7.2",
     "query-string": "^6.7.0",
     "react": "^16.8.6",
-    "react-big-calendar": "^0.20.2",
+    "react-big-calendar": "^0.24.5",
     "react-dom": "^16.0.0",
     "react-loading": "^2.0.3",
     "react-markdown": "^4.1.0",
