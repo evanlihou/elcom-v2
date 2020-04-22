@@ -24,7 +24,7 @@
     "react-scroll-to-component": "^1.0.2",
     "sanitize-html": "^1.20.1",
     "simple-react-modal": "^0.5.1",
-    "typewriter-effect": "^2.6.0",
+    "typewriter-effect": "^2.13.0",
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
