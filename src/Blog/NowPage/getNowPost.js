@@ -3,7 +3,7 @@ import Moment from 'moment';
 
 /**
  * Gets the latest post from my blog with the tag "now" and returns it as
- * received from the API plus a moment objet as "publish_moment" to make
+ * received from the API plus a moment object as "publish_moment" to make
  * displaying dates easier. Returns null if no post found, or object with "error"
  * key if an error occured.
  */
