@@ -13,6 +13,9 @@ class Menu extends Component {
           <Link to="/now">Now</Link>
           <span>/</span>
           <Link to="/blog">Blog</Link>
+          {/* Coming soon.... */}
+          {/* <span>/</span>
+          <Link to="/stats">Statistics</Link> */}
         </div>
         <ThemeSwitch />
       </div>

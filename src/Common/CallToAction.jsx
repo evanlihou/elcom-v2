@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Typewriter from 'typewriter-effect';
+// import Typewriter from 'typewriter-effect';
 import './CallToAction.sass';
 
 class Social extends Component {
@@ -30,7 +30,7 @@ class CallToAction extends Component {
         <div className="cta-content">
           <h1 className="noPrint">Hey there!</h1>
           <h2><span className="noPrint">I'm </span>Evan Lihou</h2>
-          <h3 className="noPrint">I do <Typewriter
+          {/* <h3 className="noPrint">I do <Typewriter
             options={{
               strings: [
                 "custom web solutions",
@@ -41,7 +41,7 @@ class CallToAction extends Component {
               loop: true,
               delay: 25
             }}
-          /></h3>
+          /></h3> */}
           <a href={"mailto:" + this.props.email} className="contact">Get in touch</a>
           <span className="contact-text">{this.props.email}</span>
           <Socials socials={[
