@@ -14,7 +14,7 @@ class Projects extends Component {
       <div className="projects">
         <h3>My Projects</h3>
         <ul>
-          <ProjectEntry name="FIRST Alumni and Mentors Network at Michigan State Website" shortName="famnms.com">
+          <ProjectEntry name="FIRST at Michigan State Website" shortName="firstatmsu.org" img="/fms-site.png">
             A website running on October CMS which is still a work in progress.
             This project will include systems for member management, attendance
             tracking, event calendars, and RSVPs.

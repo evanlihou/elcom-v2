@@ -20,7 +20,7 @@ async function getData(filename) {
             return <div dangerouslySetInnerHTML={{__html: MarkdownCompiler(await resp.text())}} />;
         } else {
             console.error("getData received an unknown content-type", type)
-            return "UNDEF" + type;
+            return "UNDEF " + type;
         }
     } catch (e) {
         console.error(`Error fetching ${filename}`);

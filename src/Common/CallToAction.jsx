@@ -47,7 +47,7 @@ class CallToAction extends Component {
           <Socials socials={[
             {
                 "icon": "linkedin",
-                "link": "https://www.linkedin.com/in/evan-lihou-993a26147",
+                "link": "https://www.linkedin.com/in/evan-lihou",
                 "text": "Evan Lihou"
             },
             {
