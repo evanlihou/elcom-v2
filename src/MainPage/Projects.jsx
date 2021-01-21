@@ -14,24 +14,24 @@ class Projects extends Component {
       <div className="projects">
         <h3>My Projects</h3>
         <ul>
-          <ProjectEntry name="FIRST at Michigan State Website" shortName="firstatmsu.org" img="/fms-site.png">
+          <ProjectEntry name="FIRST at Michigan State Website" href="https://github.com/famnms/website-october" img="/fms-site.png">
             A website running on October CMS which is still a work in progress.
             This project will include systems for member management, attendance
             tracking, event calendars, and RSVPs.
           </ProjectEntry>
-          <ProjectEntry name={"FIRST Alumni Collegiate Competition Ri3D Scoreboard"} shortName="FACC Scoreboard" img="/scoreboard.png">
+          <ProjectEntry name={"FIRST Alumni Collegiate Competition Ri3D Scoreboard"} href="https://github.com/firstatmsu/facc-scoreboard-svr" img="/scoreboard.png">
             A realtime scoreboard made especially for a Robot in 3 Days
             competition held by <i>FIRST</i> alumni for college students. Runs a
             Hapi.js server and presented with the help of React and Socket.io
             for instant updates.
           </ProjectEntry>
-          <ProjectEntry name="EvanLihou.com" img="/site.png">
+          <ProjectEntry name="EvanLihou.com" href="https://github.com/evanlihou/elcom-v2" img="/site.png">
             This site is my first foray into React and JavaScript. It's
             been a very long and hard project learning something new but
             enjoyable nonetheless. In production, this runs on a Linode VPS with
             Nginx.
           </ProjectEntry>
-          <ProjectEntry name="ICS" img="/ics.png">
+          <ProjectEntry name="ICS" href="https://github.com/evanlihou/ics" img="/ics.png">
             <i>ICS</i> is a proprietary inventory system I designed and made
             for my high school over a few months. Its basic features include
             asset management, inventory checkin and checkout, ahead-of-time
@@ -49,7 +49,7 @@ class Projects extends Component {
 class ProjectEntry extends Component {
   render() {
     return (
-      <a href={"mailto:evanlihou@evanlihou.com?subject=" + encodeURIComponent(this.props.shortName || this.props.name)}>
+      <a href={this.props.href}>
         <li>
           {this.props.img &&
             <img src={this.props.img} alt={"Screenshot of " + this.props.name} />
