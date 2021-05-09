@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "jquery": "^3.5.1",
-    "marked": "^1.2.7",
+    "marked": "^2.0.0",
     "moment": "^2.29.1",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
