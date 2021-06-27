@@ -8,16 +8,22 @@ class Resume extends Component {
       <div className="resume">
         <h3>Curriculum Vitae</h3>
         <ResumeSection
+          title="Software Developer"
+          location="Amrock"
+          time="July 2021 to Present"
+          current
+        >
+          
+        </ResumeSection>
+        <ResumeSection
           title="Student Info Tech"
           location="Facility for Rare Isotope Beams"
-          time="May 2018 to Present"
-          current
+          time="May 2018 to June 2021"
         >
           My position at the FRIB began in SharePoint development maintaining
           and creating various simple to moderately complex solutions for
-          business units. Since about September I have also been spending about
-          half of my time working on their ASP.NET MVC application for more
-          advanced solutions.
+          business units, then evolved to spending most of my time working on
+          their ASP.NET MVC application for more advanced solutions.
         </ResumeSection>
         <ResumeSection
           title="Broad Scholar"
