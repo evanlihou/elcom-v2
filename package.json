@@ -16,7 +16,7 @@
     "react-modal": "^3.14.3",
     "react-router-dom": "^5.2.0",
     "react-scroll-to-component": "^1.0.2",
-    "sanitize-html": "^2.4.0",
+    "sanitize-html": "^2.5.2",
     "simple-react-modal": "^0.5.1",
     "typewriter-effect": "^2.18.0",
     "use-dark-mode": "^2.3.1"
