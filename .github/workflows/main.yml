@@ -20,7 +20,7 @@ jobs:
         node-version: 14.x
         cache: 'npm'
     - run: npm ci
-    - run: "(${{secrets.envFile}} | base64 -d) > src/.env.js"
+    - run: "(echo ${{secrets.envFile}} | base64 -d) > src/.env.js"
     - run: npm run build --if-present
     - name: Upload build
       uses: actions/upload-artifact@v2.3.1
