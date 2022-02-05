@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './Common/Variables.sass'
 import './App.sass';
 import Menu from './Common/Menu'
 import MainPage from './MainPage/';
-// Tutoring removed from site as I do not currently tutor
-// import Tutoring from './Tutoring/';
 import NowPage from './Blog/NowPage';
 import PostsList from './Blog/PostsList/';
 import Socials from './Socials/'
@@ -16,14 +14,16 @@ class App extends Component {
     return (
       <div className="App">
         <Menu />
-        <Switch>
-          <Route exact path="/" component={MainPage} />
-          {/* <Route path="/tutoring" component={Tutoring} /> */}
-          <Route path="/now" component={NowPage} />
-          <Route path="/blog" component={PostsList} />
-          <Route path="/socials" component={Socials} />
-          <Route exact path="*" component={RouteNotFound} />
-        </Switch>
+        {/* <BrowserRouter> */}
+          <Routes>
+            <Route exact path="/" element={<MainPage />} />
+            {/* <Route path="/tutoring" component={Tutoring} /> */}
+            <Route path="/now" element={<NowPage />} />
+            <Route path="/blog" element={<PostsList />} />
+            <Route path="/socials" element={<Socials />} />
+            <Route exact path="*" element={<RouteNotFound />} />
+          </Routes>
+        {/* </BrowserRouter> */}
       </div>
     );
   }

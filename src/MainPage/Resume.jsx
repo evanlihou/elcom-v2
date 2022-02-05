@@ -13,7 +13,12 @@ class Resume extends Component {
           time="July 2021 to Present"
           current
         >
-          
+          Since starting my time at Amrock, I've been working on both new and
+          legacy applications to support internal teams specializing in
+          the management of third-party partners. These new applications include
+          microservices written in Angular (TypeScript) and .NET Core and the legacy
+          applications written in .NET Framework including WPF Windows applications,
+          ASP.NET code-behind websites, and command line tools.
         </ResumeSection>
         <ResumeSection
           title="Student Info Tech"
