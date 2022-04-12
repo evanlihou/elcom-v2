@@ -8,7 +8,7 @@ class Resume extends Component {
       <div className="resume">
         <h3>Curriculum Vitae</h3>
         <ResumeSection
-          title="Software Developer"
+          title="Software Engineer"
           location="Amrock"
           time="July 2021 to Present"
           current
