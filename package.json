@@ -13,7 +13,7 @@
     "react-loading": "^2.0.3",
     "react-router-dom": "^6.2.1",
     "sanitize-html": "^2.7.0",
-    "typewriter-effect": "^2.18.0",
+    "typewriter-effect": "^2.19.0",
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
