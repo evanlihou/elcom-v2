@@ -1,6 +1,6 @@
 import React from 'react'
 
-import useDarkMode from 'use-dark-mode';
+import useDarkMode from './DarkMode';
 
 const ThemeSwitch = () => {
   const darkMode = useDarkMode(false);
