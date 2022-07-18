@@ -3,6 +3,7 @@
   "version": "2.4.0",
   "private": true,
   "dependencies": {
+    "@use-it/event-listener": "^0.1.7",
     "marked": "^4.0.12",
     "moment": "^2.29.1",
     "prop-types": "^15.7.2",
@@ -13,12 +14,11 @@
     "react-router-dom": "^6.3.0",
     "sanitize-html": "^2.7.0",
     "typewriter-effect": "^2.18.0",
-    "@use-it/event-listener": "^0.1.7",
-    "use-persisted-state-hook": "^1.1.0"
+    "use-local-storage-state": "^18.1.0"
   },
   "devDependencies": {
-    "react-scripts": "^5.0.1",
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

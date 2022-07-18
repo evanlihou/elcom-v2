@@ -1,4 +1,4 @@
-import createPersistedState from 'use-persisted-state-hook';
+import useLocalStorageState from 'use-local-storage-state';
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import useEventListener from '@use-it/event-listener';
 
@@ -13,9 +13,9 @@ const mockElement = {
 
 const preferDarkQuery = '(prefers-color-scheme: dark)';
 
-const initialize = (storageKey, storageProvider, glbl = global) => {
+const initialize = (storageKey, glbl = global) => {
   const usePersistedDarkModeState = storageKey
-    ? createPersistedState(storageKey, storageProvider)
+    ? (initial) => useLocalStorageState(storageKey, {defaultValue: initial})
     : useState;
 
   const mql = glbl.matchMedia ? glbl.matchMedia(preferDarkQuery) : {};
@@ -59,7 +59,6 @@ const useDarkMode = (
     classNameLight,
     onChange,
     storageKey = 'darkMode',
-    storageProvider,
     global,
   } = {}
 ) => {
@@ -69,8 +68,8 @@ const useDarkMode = (
     getInitialValue,
     mediaQueryEventTarget,
   } = useMemo(
-    () => initialize(storageKey, storageProvider, global),
-    [storageKey, storageProvider, global]
+    () => initialize(storageKey, global),
+    [storageKey, global]
   );
 
   const [state, setState] = usePersistedDarkModeState(getInitialValue(initialValue));
