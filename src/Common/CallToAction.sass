@@ -88,7 +88,8 @@
         text-decoration: none
         transition: background .2s
         &:hover
-          background: lighten($accent, 10%)
+          background: darken($accent, 10%)
+          border-radius: 5px
           .dark-mode &
             background: lighten($dark-mode-accent, 10%)
         @media print
