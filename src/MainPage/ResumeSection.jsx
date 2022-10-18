@@ -10,7 +10,7 @@ class ResumeSection extends Component {
           {this.props.location && <span className="location">{this.props.location}</span>}
           {this.props.location && this.props.time && <span>{' '}&mdash;{' '}</span>}
           {this.props.time && <span className="time">{this.props.time}</span>}
-          <p>{this.props.children}</p>
+          <ul>{this.props.children}</ul>
         </div>
       </div>
     );

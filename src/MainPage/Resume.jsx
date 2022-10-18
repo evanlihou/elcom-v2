@@ -13,48 +13,39 @@ class Resume extends Component {
           time="July 2021 to Present"
           current
         >
-          Since starting my time at Amrock, I've been working on both new and
-          legacy applications to support internal teams specializing in
-          the management of third-party partners. These new applications include
-          microservices written in Angular (TypeScript) and .NET Core and the legacy
-          applications written in .NET Framework including WPF Windows applications,
-          ASP.NET code-behind websites, and command line tools.
+          <li>Led the engineering efforts for one of the first services in the company to be built in Amazon Web Services</li>
+          <li>Improved and maintained internal applications which were at the forefront of technology modernization initiatives</li>
+          <li>Implemented feature flagging, retry/backoff, and hardened the security of multiple applications</li>
+          <li>Created SQL scripts to streamline troubleshooting process for data synchronization between modern and legacy systems</li>
+          <li>Maintained and supported both legacy and new applications as well as B2B integrations</li>
         </ResumeSection>
         <ResumeSection
           title="Student Info Tech"
           location="Facility for Rare Isotope Beams"
           time="May 2018 to June 2021"
         >
-          My position at the FRIB began in SharePoint development maintaining
-          and creating various simple to moderately complex solutions for
-          business units, then evolved to spending most of my time working on
-          their ASP.NET MVC application for more advanced solutions.
+          <li>Led requirements gathering and development of upgrades to anonymous employee concern submission system in .NET Core</li>
+          <li>Improved and extended automated build and deployment processes for .NET Core and .NET Framework web applications in TeamCity and Octopus Deploy</li>
+          <li>Developed account tracking system, which includes access requests, lifecycle management, and auditing capabilities using SharePoint and automated PowerShell jobs </li>
+          <li>Maintained and supported existing business systems applications in PHP, .NET Core, and .NET Framework using agile methodology</li>
         </ResumeSection>
         <ResumeSection
           title="Broad Scholar"
           location="MSU Broad College of Business"
           time="September 2017 to May 2018"
         >
-          I had the pleasure of working with
-          {/* Note: React needs the {' '} to add space around links */}
-          {' '}<a href="https://broad.msu.edu/facultystaff/zhanglu/">
-            Dr. Lu Zhang
-          </a>{' '}
-          from Michigan State University's School of Hospitality Business.
-          During my time in this position, I assisted in research, including
-          categorizing and collating academic papers as well as scraping data
-          from online sources to collect information for multiple papers and
-          manuscripts.
+          <li>Worked with {' '}<a href="https://broad.msu.edu/facultystaff/zhanglu/">Dr. Lu Zhang</a>{' '}from Michigan State University's School of Hospitality Business</li>
+          <li>Assisted in research for multiple papers and manuscripts</li>
+          <li>Categorized and collated academic papers</li>
+          <li>Utilized web scraping to collect data</li>
         </ResumeSection>
         <ResumeSection
           title="Tech Freelancing"
-          time="Summer 2017"
+          time="2017 to 2018"
         >
-          My time freelancing has brought me together with several companies to
-          do diverse jobs across the tech field. I’ve worked with great
-          companies like Peak Systems for a large thin client deployment and
-          The Consumer Insight to support a major internet provider’s brand and
-          rapport with their resellers.
+          <li>Worked with various companies as an independent contractor</li>
+          <li>Performed point-of-sale maintenance</li>
+          <li>Designed an e-commerce site for a local apparel company</li>
         </ResumeSection>
       </div>
     );
