@@ -13,8 +13,8 @@ class Resume extends Component {
           time="July 2021 to Present"
           current
         >
-          <li>Led the engineering efforts for one of the first services in the company to be built in Amazon Web Services</li>
-          <li>Improved and maintained internal applications which were at the forefront of technology modernization initiatives</li>
+          <li>Led the engineering efforts for the auto-assignment of notaries for remote closings, one of the first microservices in the company to be built in Amazon Web Services</li>
+          <li>Improved and maintained the Partner Management service, which was at the forefront of technology modernization initiatives</li>
           <li>Implemented feature flagging, retry/backoff, and hardened the security of multiple applications</li>
           <li>Created SQL scripts to streamline troubleshooting process for data synchronization between modern and legacy systems</li>
           <li>Maintained and supported both legacy and new applications as well as B2B integrations</li>
