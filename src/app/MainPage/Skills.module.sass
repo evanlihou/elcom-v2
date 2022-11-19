@@ -1,0 +1,15 @@
+@import "../Common/Variables"
+  
+.skills
+  ul
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    li
+      background: lighten($light-mode-background, 10%)
+      body[data-theme="dark"] &
+        background: darken($dark-mode-background, 10%)
+      padding: 5px
+      margin: 5px
+      font-weight: 400

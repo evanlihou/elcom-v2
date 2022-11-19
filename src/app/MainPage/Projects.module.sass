@@ -1,0 +1,81 @@
+@import "../Common/Variables"
+  
+.projects
+  ul
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+    // justify-content: center
+    li
+      display: flex
+      flex-direction: column
+      // Half the width, but account for the 5px padding and margin on each side
+      width: calc(50% - 20px)
+      background: lighten($light-mode-background, 10%)
+      body[data-theme="dark"] &
+        background: darken($dark-mode-background, 5%)
+      padding: 5px
+      margin: 5px
+
+      h4
+        margin-bottom: 0
+        margin-left: 10px
+      p
+        margin: 10px
+        margin-left: 20px
+      img
+        width: 100%
+        &:before
+          content: ''
+          width: 100px
+          height: 100px
+          background-color: blue
+      .linkContainer
+        flex-grow: 1
+        align-self: center
+        box-sizing: border-box
+        display: flex
+        align-items: flex-end
+      a
+        padding: .5em
+        text-decoration: none
+        color: $light-mode-text
+        background: darken($light-mode-background, 10%)
+        body[data-theme="dark"] &
+          background: lighten($dark-mode-background, 5%)
+          color: $dark-mode-text
+  .close
+    position: absolute
+    top: 10px
+    right: 10px
+    background: none
+    outline: none
+    border: none
+  .modal-overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0,0,0,0.35)
+    z-index: 9998
+    display: flex
+    justify-content: center
+    align-items: center
+
+  .modal-overlay-content
+    position: fixed
+    border: 1px solid #ccc
+    background: #fff
+    outline: none
+    z-index: 9999
+    width: 80%
+    height: 80vh
+    padding: 24px
+    line-height: 16px
+    overflow: scroll
+    
+  iframe
+    border: none
+    width: 100%
+    height: 100vh
