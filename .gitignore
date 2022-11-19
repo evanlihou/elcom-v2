@@ -12,6 +12,7 @@
 
 # misc
 .DS_Store
+src/.env.js
 .env.js
 .env.local
 .env.development.local
