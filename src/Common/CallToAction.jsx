@@ -5,7 +5,7 @@ import './CallToAction.sass';
 class Social extends Component {
   render() {
     return (
-      <a href={this.props.link}><i className={"fab fa-"+this.props.icon} />{this.props.text}</a>
+      <a rel="me" href={this.props.link}><i className={"fab fa-"+this.props.icon} />{this.props.text}</a>
     )
   }
 }
@@ -54,6 +54,11 @@ class CallToAction extends Component {
                 "icon": "github",
                 "link": "https://github.com/evanlihou",
                 "text": "@evanlihou"
+            },
+            {
+                "icon": "mastodon",
+                "link": "https://tech.lgbt/@evan",
+                "text": "@evan@tech.lgbt"
             },
             {
                 "icon": "twitter",
