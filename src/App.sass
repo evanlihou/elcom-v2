@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700')
-@import "./Common/Variables"
+@import "./app/common/Variables"
 
 body
   margin-bottom: 50px
   font-family: 'Open Sans', sans-serif
   background: $light-mode-background
   color: $light-mode-text
-  &.dark-mode
+  &[data-theme="dark"]
     background: $dark-mode-background
     color: $dark-mode-text
     ::selection
       background: black
+  @media print
+    font-size: 0.7em
 
 a
   color: $light-mode-text
-  .dark-mode &
+  body[data-theme="dark"] &
     color: $dark-mode-text
+  @media print
+    &::after
+      content: " (" attr(href) ") "
 
 hr
   margin: 20px 20% 10px 20%
@@ -23,12 +28,12 @@ hr
   $contrast-modifier: 20%
   border-width: .75px
   color: darken($light-mode-background, $contrast-modifier)
-  .dark-mode &
+  body[data-theme="dark"] &
     color: lighten($dark-mode-background, $contrast-modifier)
 h3
   text-transform: uppercase
   color: $light-mode-text
-  .dark-mode &
+  body[data-theme="dark"] &
     color: $dark-mode-text
 
 .pageContent

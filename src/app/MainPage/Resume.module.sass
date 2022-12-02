@@ -1,0 +1,30 @@
+@import "../common/Variables"
+  
+.resume-section
+  h4, .location
+    margin: 0
+    padding-top: 1.5rem
+
+  .location
+    font-style: italic
+  
+  .tag
+    background-color: lighten($accent, 25%)
+    body[data-theme="dark"] &
+      background-color: lighten($dark-mode-accent, 5%) 
+    padding: .3em
+    margin: 0
+    text-transform: uppercase
+
+  .tag + h4
+    padding-top: .5rem
+
+  p
+    margin: .5rem 5% 0 5%
+  
+  .ul
+    list-style-position: outside
+
+.resume-section-content
+  display: inline-block
+  width: 100%

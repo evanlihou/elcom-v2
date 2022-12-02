@@ -12,6 +12,7 @@
 
 # misc
 .DS_Store
+src/.env.js
 .env.js
 .env.local
 .env.development.local
@@ -23,3 +24,5 @@ yarn-debug.log*
 yarn-error.log*
 /build
 .eslintcache
+.next
+.vscode

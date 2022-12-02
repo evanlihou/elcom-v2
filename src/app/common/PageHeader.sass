@@ -1,0 +1,31 @@
+@import "Variables"
+$skew: 3deg
+
+.PageHeader
+  color: white
+  background: linear-gradient(to top, $accent, darken($accent, 10%))
+  box-shadow: 0px 3px 10px darken($light-mode-background, 40%)
+  body[data-theme="dark"] &
+    color: $dark-mode-text
+    background: linear-gradient(to top, $dark-mode-accent, darken($dark-mode-accent, 10%))
+    box-shadow: 0px 3px 10px darken($dark-mode-background, 10%)
+  text-align: center
+  text-transform: uppercase
+  padding-bottom: 20px
+  transform: skewY($skew)
+  width: 100%
+  margin-top: -150px
+  @media print
+    margin-top: 0
+    box-shadow: none
+    background: none
+    color: black
+  .content
+    padding-top: 150px
+    transform: skewY(-$skew)
+    @media print
+      margin-top: 0
+    h2
+      font-size: 1.8rem
+    h3
+      color: white
