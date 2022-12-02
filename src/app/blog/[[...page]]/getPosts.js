@@ -2,7 +2,7 @@ import env from '../../../.env.js'
 import Moment from 'moment';
 
 const TRIM_LEN = 200;
-const PAGE_LIMIT = 2;
+const PAGE_LIMIT = 10;
 
 async function getPosts(pageNum = 1) {
   try {
