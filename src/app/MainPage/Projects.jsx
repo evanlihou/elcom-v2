@@ -54,7 +54,7 @@ function ProjectEntry(props) {
             <img src={props.img} alt={"Screenshot of " + props.name} />
           }
           <h4>{props.name}</h4>
-          {props.children}
+          <p>{props.children}</p>
           <div className={styles.linkContainer}>
             <a href={props.href}>Source Code</a>
           </div>
