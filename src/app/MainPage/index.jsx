@@ -13,9 +13,9 @@ export default async function MainPage(props) {
         <div className="pageContent">
           <AboutMe about={content.AboutMe} />
           <hr />
-          <Projects />
-          <hr />
           <Resume />
+          <hr />
+          <Projects />
           <hr />
           <Skills />
         </div>
